@@ -1,13 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: darkgray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.recipeContainer {
+  min-height: 50vh;
+  background-color: cadetblue;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  font-size: 17px;
+}
+
+.btn-search {
+  margin: 0 0 0 2px;
+  font-size: 21px;
+  padding: 7px;
+  background-color: green;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+
+@media only screen and (max-width: 650px) {
+  
+  
+
+  .recipeContainer {
+  min-height: 80vh;
+  background: cadetblue;
+  width: 80%;
+  margin: 1rem auto;
+    }
+
+  .section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 15px;
+  }
+
 }
